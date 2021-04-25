@@ -1,0 +1,1 @@
+import "./js/cafeClass.js";
