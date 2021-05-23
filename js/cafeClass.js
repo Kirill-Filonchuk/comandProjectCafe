@@ -108,6 +108,7 @@ class Cafe {
         // console.log(nameStr);
     }
 
+    // Task 6
     getCheck (tableId) {
         const table = this.findTable(tableId);
         if (table.preparing.some((dish)=>!dish.isCooked)) {
@@ -134,7 +135,10 @@ class Cafe {
     },'')+`СТОИМОСТЬ ЗАКАЗА: ${table.currentCheck}грн\nЧАЕВЫЕ: ${table.tips}грн\nИТОГО: ${table.totalCheck}грн`
     }
 
+    // Task 7
 
+    // 
+    
 
 }
 
