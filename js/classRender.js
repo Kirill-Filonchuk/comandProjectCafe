@@ -21,8 +21,9 @@ export default class Render {
         for (let optionKey in options) {
             if (optionKey === "textContent") {
                 element[optionKey] = options[optionKey];
+            } else {
+                element.setAttribute(optionKey, options[optionKey]);
             }
-            element.setAttribute(optionKey, options[optionKey]);
         }
         return element;
     }
