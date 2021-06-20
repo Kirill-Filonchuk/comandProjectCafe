@@ -1,0 +1,16 @@
+<form id="menu-form">
+<ul>
+ {{#each menu}}
+  <li id="{{this.id}}">
+  <span>{{this.name}}</span>
+  <span>{{this.price}}</span>
+  <input type="text" name="{{this.id}}" value="0">
+  <button type="button" data-action="deduct">-</button>
+  <button type="button" data-action="add">+</button>
+  <button type="button" data-action="reset">Reset</button>
+</li>
+{{/each}}
+</ul>
+<button type="submit">Checkout</button>
+</form>
+

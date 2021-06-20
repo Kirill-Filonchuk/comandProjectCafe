@@ -8,6 +8,10 @@ export default class Render {
         return Render.refs;
     }
 
+    set refs({propName, node}) {
+        Render.refs[propName]=node;
+    }
+
     getElementWithMarkup(parentNode, markup, position = "beforeend") {
         parentNode.insertAdjacentHTML(position, markup);
     }
